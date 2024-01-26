@@ -1,0 +1,14 @@
+body {
+    background-color: antiquewhite;
+}
+input {
+    margin: 5px;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+  }
+  label {
+    display: block;
+    width: 100px;
+  }
+  
