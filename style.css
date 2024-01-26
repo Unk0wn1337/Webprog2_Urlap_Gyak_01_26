@@ -7,8 +7,21 @@ input {
 input[type=text]:focus {
     background-color: lightblue;
   }
-  label {
+label {
     display: block;
     width: 100px;
   }
+
+button{
+    margin: auto;
+}
   
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.evjaratDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
