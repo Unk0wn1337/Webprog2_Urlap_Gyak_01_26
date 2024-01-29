@@ -11,22 +11,29 @@
     <form action="#" method="get">
         <fieldset>
          <legend>Autó adatai</legend>
-        <div class="formContainer">
-            <div class="formMarka">
-                <label for="kMarka">Kedvenc márka:</label>
-                <input type="text" id="kMarka" name="marka" value="Honda"><br>           
-            </div>
-            <div class="autoTipus">
-                <label for="tipus">Tipus:
-                    <input type="text" id="tipus" name="marka" value="Civic"><br>       
+            <div class="formContainer">
+                <div class="formMarka">
+                    <label for="kMarka">Kedvenc márka:</label>
+                    <input type="text" id="kMarka" name="marka" value="Honda"><br>           
                 </div>
-                <div class="evjaratDiv"></div>
-                <label for="evjarat">Évjárat:</label>
-                <input type="range" id="evjarat " name="evjar" min="1804" max="2024" oninput="this.form.evjarSzam.value = this.value">
-                <input type="number" id="evjaratSzam " name="evjarSzam"  oninput="this.form.evjar.value = this.value"><br> 
-                <input type="submit"  value="Küldés">   
-            </fieldset>        
-        </div>
+                <div class="autoTipus">
+                    <label for="tipus">Tipus:
+                        <input type="text" id="tipus" name="marka" value="Civic"><br>       
+                    </div>
+                    <div class="evjarat">
+                    <label for="evjarat">Évjárat:</label>
+                    </div>
+                    <div class="evjaratRange">
+                        <input type="range" id="evjarat " name="evjar" min="1804" max="2024" oninput="this.form.evjarSzam.value = this.value"><br>
+                        <input type="number" id="evjaratSzam " name="evjarSzam"  oninput="this.form.evjar.value = this.value"><br>
+                    </div>
+                </div>
+                 <div class="buttonContainer">
+                    <div class="submitButton">
+                        <input type="submit"  value="Küldés">   
+                    </div>
+                 </div>
+        </fieldset>        
     </form>
 </body>
 </html>

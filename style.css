@@ -16,12 +16,44 @@ button{
     margin: auto;
 }
   
-.formContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+h1 {
+    text-align: center;
 }
 
-.evjaratDiv{
+.formContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "f e"
+                         "a er";
 }
+
+.formMarka{
+    display: grid;
+    grid-area: f;
+}
+.autoTipus{
+    display: grid;
+    grid-area: a;
+}
+
+.evjarat{
+    display: grid;
+    grid-area: e;
+}
+.evjaratRange{
+    display: grid;
+    grid-area: er;
+}
+.submitButton{
+   text-align: center;
+}
+
+@media only screen and (max-width: 408px) {
+    .formContainer {
+        display: grid;
+        grid-template-areas: "f" 
+                             "a"
+                             "e" 
+                             "er";
+    }
+
+  }
